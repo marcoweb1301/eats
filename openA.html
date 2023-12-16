@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EATS | Ambil</title>
+    <link rel="stylesheet" href="style_openA.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="Santapan.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center> -->
+    <br />
+    <center>
+      <div class="formulir">
+        <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center>
+        <label for="projek_selesai">Nama:</label>
+        <input type="text" placeholder="Masukkan nama anda" class="form_projekselesai form" /><br><br>
+        <label for="lokasi">Alamat:</label>
+        <input type="text" placeholder="Masukkan alamat lengkap" class="form_lokasi form" /><br><br>
+        <label for="nama">Jenis Makanan:</label>
+        <select class="jenis-makanan">
+          <option value="Nasi Goreng Ayam">Nasi Goreng Ayam</option>
+          <option value="Soto Sapi">Soto Sapi</option>
+          <option value="Nasi Ayam Gulai">Nasi Ayam Gulai</option>
+          <option value="Nasi Sayur Sop Sapi">Nasi Sayur Sop Sapi</option>
+        </select><br /><br />
+        <label for="nomor_telepon">Kuantitas (Kg):</label>
+        <input type="number" placeholder="Kuantitas (Kg)" class="form_nomortelepon form" /><br><br>
+        <label for="umur">Sistem Pengantaran:</label>
+        <select class="pengantaran">
+          <option value="Antar ke kantor cabang">Ambil di kantor cabang</option>
+          <option value="Dijemput">Diantar</option>
+        </select><br /><br />
+        <button onclick="kirim()" class="btn_kirim">Daftar sekarang !</button>
+        <p id="p_projek"></p>
+        <p id="p_lokasi"></p>
+        <p id="p_nomor_telepon"></p>
+        <p id="jenisMakanan"></p>
+        <p id="p_pengantaran"></p>
+        <p id="p_konfirmasi"></p>
+      </div>
+    </center>
+
+    <script src="script_openA.js"></script>
+  </body>
+</html>
